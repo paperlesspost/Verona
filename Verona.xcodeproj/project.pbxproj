@@ -1,220 +1,320 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {};
-    objectVersion = 46;
-    rootObject = __RootObject_;
-    objects = {
-        __RootObject_ = {
-            isa = PBXProject;
-            attributes = {LastUpgradeCheck = 9999;};
-            buildConfigurationList = ___RootConfs_;
-            compatibilityVersion = 'Xcode 3.2';
-            developmentRegion = English;
-            hasScannedForEncodings = 0;
-            knownRegions = (en);
-            mainGroup = ___RootGroup_;
-            productRefGroup = ____Products_;
-            projectDirPath = '';
-            projectRoot = '';
-            targets = (______Target_Verona, ______Target_VeronaTests);
-        };
-        '__PBXFileRef_Package.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Package.swift';
-            sourceTree = '<group>';
-        };
-        ___RootGroup_ = {
-            isa = PBXGroup;
-            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_,  Dependencies_, _______Tests_, ____Products_);
-            sourceTree = '<group>';
-        };
-        _______Group_Verona = {
-            isa = PBXGroup;
-            name = 'Verona';
-            path = 'Sources';
-            sourceTree = '<group>';
-            children = ('__PBXFileRef_Sources/Verona.swift');
-        };
-        '__PBXFileRef_Sources/Verona.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Verona.swift';
-            sourceTree = '<group>';
-        };
-        ______Target_Verona = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = _______Confs_Verona;
-            buildPhases = (CompilePhase_Verona, ___LinkPhase_Verona);
-            buildRules = ();
-            dependencies = ();
-            name = 'Verona';
-            productName = Verona;
-            productReference = _____Product_Verona;
-            productType = 'com.apple.product-type.framework';
-        };
-        _____Product_Verona = {
-            isa = PBXFileReference;
-            explicitFileType = 'wrapper.framework';
-            path = 'Verona.framework';
-            sourceTree = BUILT_PRODUCTS_DIR;
-        };
-        CompilePhase_Verona = {
-            isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Sources/Verona.swift');
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        '__src_cc_ref_Sources/Verona.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Sources/Verona.swift';
-        };
-        ___LinkPhase_Verona = {
-            isa = PBXFrameworksBuildPhase;
-            files = ();
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        _______Confs_Verona = {
-            isa = XCConfigurationList;
-            buildConfigurations = (___DebugConf_Verona, _ReleaseConf_Verona);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-        ___DebugConf_Verona = {
-            isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Verona.xcodeproj/Verona_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'Verona'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
-            name = Debug;
-        };
-        _ReleaseConf_Verona = {
-            isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Verona.xcodeproj/Verona_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'Verona'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
-            name = Release;
-        };
-        __Dependency_Verona = {
-            isa = PBXTargetDependency;
-            target = ______Target_Verona;
-        };
-        _______Group_VeronaTests = {
-            isa = PBXGroup;
-            name = 'VeronaTests';
-            path = 'Tests/VeronaTests';
-            sourceTree = '<group>';
-            children = ('__PBXFileRef_Tests/VeronaTests/VeronaTests.swift');
-        };
-        '__PBXFileRef_Tests/VeronaTests/VeronaTests.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'VeronaTests.swift';
-            sourceTree = '<group>';
-        };
-        ______Target_VeronaTests = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = _______Confs_VeronaTests;
-            buildPhases = (CompilePhase_VeronaTests, ___LinkPhase_VeronaTests);
-            buildRules = ();
-            dependencies = (__Dependency_Verona);
-            name = 'VeronaTests';
-            productName = VeronaTests;
-            productReference = _____Product_VeronaTests;
-            productType = 'com.apple.product-type.bundle.unit-test';
-        };
-        _____Product_VeronaTests = {
-            isa = PBXFileReference;
-            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
-            path = 'VeronaTests.xctest';
-            sourceTree = BUILT_PRODUCTS_DIR;
-        };
-        CompilePhase_VeronaTests = {
-            isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Tests/VeronaTests/VeronaTests.swift');
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        '__src_cc_ref_Tests/VeronaTests/VeronaTests.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Tests/VeronaTests/VeronaTests.swift';
-        };
-        ___LinkPhase_VeronaTests = {
-            isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_Verona_via_VeronaTests);
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        _LinkFileRef_Verona_via_VeronaTests = {
-            isa = PBXBuildFile;
-            fileRef = _____Product_Verona;
-        };
-        _______Confs_VeronaTests = {
-            isa = XCConfigurationList;
-            buildConfigurations = (___DebugConf_VeronaTests, _ReleaseConf_VeronaTests);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-        ___DebugConf_VeronaTests = {
-            isa = XCBuildConfiguration;
-            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Verona.xcodeproj/VeronaTests_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
-            name = Debug;
-        };
-        _ReleaseConf_VeronaTests = {
-            isa = XCBuildConfiguration;
-            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Verona.xcodeproj/VeronaTests_Info.plist'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
-            name = Release;
-        };
-        __Dependency_VeronaTests = {
-            isa = PBXTargetDependency;
-            target = ______Target_VeronaTests;
-        };
-        '__PBXFileRef_Verona.xcodeproj/Configs/Project.xcconfig' = {
-            isa = PBXFileReference;
-            lastKnownFileType = text.xcconfig;
-            path = 'Verona.xcodeproj/Configs/Project.xcconfig';
-            sourceTree = '<group>';
-        };
-        _____Configs_ = {
-            isa = PBXGroup;
-            children = ('__PBXFileRef_Verona.xcodeproj/Configs/Project.xcconfig');
-            name = Configs;
-            sourceTree = '<group>';
-        };
-        _____Sources_ = {
-            isa = PBXGroup;
-            children = (_______Group_Verona);
-            name = Sources;
-            sourceTree = '<group>';
-        };
-        _______Tests_ = {
-            isa = PBXGroup;
-            children = (_______Group_VeronaTests);
-            name = Tests;
-            sourceTree = '<group>';
-        };
-       TestProducts_ = {
-            isa = PBXGroup;
-            children = (_____Product_VeronaTests);
-            name = Tests;
-            sourceTree = '<group>';
-        };
-        ____Products_ = {
-            isa = PBXGroup;
-            children = (TestProducts_, _____Product_Verona);
-            name = Products;
-            sourceTree = '<group>';
-        };
-        _______Debug_ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = '__PBXFileRef_Verona.xcodeproj/Configs/Project.xcconfig';
-            buildSettings = {};
-            name = Debug;
-        };
-        _____Release_ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = '__PBXFileRef_Verona.xcodeproj/Configs/Project.xcconfig';
-            buildSettings = {};
-            name = Release;
-        };
-        ___RootConfs_ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (_______Debug_, _____Release_);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-    };
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		_LinkFileRef_Verona_via_VeronaTests /* Verona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Verona" /* Verona.framework */; };
+		__src_cc_ref_Sources/Verona.swift /* Verona.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Verona.swift /* Verona.swift */; };
+		__src_cc_ref_Tests/VeronaTests/VeronaTests.swift /* VeronaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/VeronaTests/VeronaTests.swift /* VeronaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66C590851DB668B900A2EE4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Verona";
+			remoteInfo = Verona;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/Verona.swift /* Verona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verona.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/VeronaTests/VeronaTests.swift /* VeronaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeronaTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Verona.xcodeproj/Configs/Project.xcconfig /* Verona.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Verona.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		"_____Product_Verona" /* Verona.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Verona.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_VeronaTests" /* VeronaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = VeronaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_Verona" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_VeronaTests" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Verona_via_VeronaTests /* Verona.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		TestProducts_ /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_VeronaTests" /* VeronaTests.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TestProducts_ /* Tests */,
+				"_____Product_Verona" /* Verona.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Verona.xcodeproj/Configs/Project.xcconfig /* Verona.xcodeproj/Configs/Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_Verona" /* Verona */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_Verona" /* Verona */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Sources/Verona.swift /* Verona.swift */,
+			);
+			name = Verona;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_VeronaTests" /* VeronaTests */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/VeronaTests/VeronaTests.swift /* VeronaTests.swift */,
+			);
+			name = VeronaTests;
+			path = Tests/VeronaTests;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_VeronaTests" /* VeronaTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"______Target_Verona" /* Verona */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Verona" /* Build configuration list for PBXNativeTarget "Verona" */;
+			buildPhases = (
+				CompilePhase_Verona /* Sources */,
+				"___LinkPhase_Verona" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Verona;
+			productName = Verona;
+			productReference = "_____Product_Verona" /* Verona.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_VeronaTests" /* VeronaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_VeronaTests" /* Build configuration list for PBXNativeTarget "VeronaTests" */;
+			buildPhases = (
+				CompilePhase_VeronaTests /* Sources */,
+				"___LinkPhase_VeronaTests" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Verona /* PBXTargetDependency */,
+			);
+			name = VeronaTests;
+			productName = VeronaTests;
+			productReference = "_____Product_VeronaTests" /* VeronaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "Verona" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"______Target_Verona" /* Verona */,
+				"______Target_VeronaTests" /* VeronaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CompilePhase_Verona /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Sources/Verona.swift /* Verona.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_VeronaTests /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Tests/VeronaTests/VeronaTests.swift /* VeronaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		__Dependency_Verona /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Verona" /* Verona */;
+			targetProxy = 66C590851DB668B900A2EE4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		_ReleaseConf_Verona /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Verona.xcodeproj/Verona_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Verona;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_VeronaTests /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Verona.xcodeproj/VeronaTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		"___DebugConf_Verona" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Verona.xcodeproj/Verona_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Verona;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_VeronaTests" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Verona.xcodeproj/VeronaTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_Verona.xcodeproj/Configs/Project.xcconfig /* Verona.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_Verona.xcodeproj/Configs/Project.xcconfig /* Verona.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		"___RootConfs_" /* Build configuration list for PBXProject "Verona" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Verona" /* Build configuration list for PBXNativeTarget "Verona" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Verona" /* Debug */,
+				_ReleaseConf_Verona /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_VeronaTests" /* Build configuration list for PBXNativeTarget "VeronaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_VeronaTests" /* Debug */,
+				_ReleaseConf_VeronaTests /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
 }
